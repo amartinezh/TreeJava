@@ -9,7 +9,7 @@ A tree whose elements have at most 2 children is called a binary tree. Since eac
      /   \
     f      k
    /  \      \
-  a     h      z     <-- leaves
+  a     h      z     <<< leaves
 
 ## Common operations
 
