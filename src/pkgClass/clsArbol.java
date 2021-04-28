@@ -11,13 +11,13 @@ package pkgClass;
  */
 public class clsArbol {
 
-    private clsNodo root;
+    private clsNodo <Integer> root;
 
     public clsArbol() {
         this.root = null;
     }
 
-    public void insertar(clsNodo dato, clsNodo rootTmp) {
+    public void insertar(clsNodo <Integer> dato, clsNodo <Integer> rootTmp) {
         if (this.getRoot() == null) { // Si e árbol está vacio
             this.setRoot(dato);
         } else { // El "arbol" no está vacio

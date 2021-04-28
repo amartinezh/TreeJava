@@ -34,6 +34,11 @@ public class frmArbolBinario extends javax.swing.JFrame {
         btnInsertar = new javax.swing.JButton();
         btnListar = new javax.swing.JButton();
         txtNum = new javax.swing.JTextField();
+        btnBorradoGrupo1 = new javax.swing.JButton();
+        btnBorradoGrupo2 = new javax.swing.JButton();
+        btnBorradoGrupo3 = new javax.swing.JButton();
+        btnBorradoGrupo4 = new javax.swing.JButton();
+        btnBorradoGrupo5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,32 +56,55 @@ public class frmArbolBinario extends javax.swing.JFrame {
             }
         });
 
+        btnBorradoGrupo1.setText("Borrado Grupo 1");
+
+        btnBorradoGrupo2.setText("Borrado Grupo 2");
+
+        btnBorradoGrupo3.setText("Borrado Grupo 3");
+
+        btnBorradoGrupo4.setText("Borrado Grupo 4");
+
+        btnBorradoGrupo5.setText("Borrado Grupo 5");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(txtNum, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnInsertar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnListar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(112, 112, 112))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(txtNum)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnInsertar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnListar, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnBorradoGrupo5)
+                    .addComponent(btnBorradoGrupo4)
+                    .addComponent(btnBorradoGrupo3)
+                    .addComponent(btnBorradoGrupo1)
+                    .addComponent(btnBorradoGrupo2))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnInsertar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnListar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(txtNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnInsertar)
+                    .addComponent(btnListar)
+                    .addComponent(btnBorradoGrupo1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBorradoGrupo2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBorradoGrupo3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnBorradoGrupo4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnBorradoGrupo5)
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         pack();
@@ -128,6 +156,11 @@ public class frmArbolBinario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBorradoGrupo1;
+    private javax.swing.JButton btnBorradoGrupo2;
+    private javax.swing.JButton btnBorradoGrupo3;
+    private javax.swing.JButton btnBorradoGrupo4;
+    private javax.swing.JButton btnBorradoGrupo5;
     private javax.swing.JButton btnInsertar;
     private javax.swing.JButton btnListar;
     private javax.swing.JTextField txtNum;

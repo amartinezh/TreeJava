@@ -9,15 +9,15 @@ package pkgClass;
  *
  * @author amartinez
  */
-public class clsNodo {
-    private int num;
-    private clsNodo izq;
-    private clsNodo der;
+public class clsNodo <T>{
+    private T num;
+    private clsNodo <T> izq;
+    private clsNodo <T> der;
 
     public clsNodo() {
     }
     
-    public clsNodo(int num, clsNodo izq, clsNodo der) {
+    public clsNodo(T num, clsNodo izq, clsNodo der) {
         this.num = num;
         this.izq = izq;
         this.der = der;
@@ -26,14 +26,14 @@ public class clsNodo {
     /**
      * @return the num
      */
-    public int getNum() {
+    public T getNum() {
         return num;
     }
 
     /**
      * @param num the num to set
      */
-    public void setNum(int num) {
+    public void setNum(T num) {
         this.num = num;
     }
 
