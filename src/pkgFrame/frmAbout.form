@@ -25,7 +25,10 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-              <Component id="lblTeam" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblTeam1" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblTeam" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace pref="201" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -35,7 +38,9 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="lblTeam" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="273" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+              <Component id="lblTeam1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="217" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -44,6 +49,11 @@
     <Component class="javax.swing.JLabel" name="lblTeam">
       <Properties>
         <Property name="text" type="java.lang.String" value="Software Developer Team"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTeam1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Santiago Garc&#xe9;s :D"/>
       </Properties>
     </Component>
   </SubComponents>

@@ -28,10 +28,13 @@ public class frmAbout extends javax.swing.JFrame {
     private void initComponents() {
 
         lblTeam = new javax.swing.JLabel();
+        lblTeam1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblTeam.setText("Software Developer Team");
+
+        lblTeam1.setText("Santiago Garcés :D");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -39,7 +42,9 @@ public class frmAbout extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(lblTeam)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblTeam1)
+                    .addComponent(lblTeam))
                 .addContainerGap(201, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -47,7 +52,9 @@ public class frmAbout extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblTeam)
-                .addContainerGap(273, Short.MAX_VALUE))
+                .addGap(40, 40, 40)
+                .addComponent(lblTeam1)
+                .addContainerGap(217, Short.MAX_VALUE))
         );
 
         pack();
@@ -90,5 +97,6 @@ public class frmAbout extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel lblTeam;
+    private javax.swing.JLabel lblTeam1;
     // End of variables declaration//GEN-END:variables
 }
