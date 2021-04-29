@@ -31,6 +31,7 @@ public class frmAbout extends javax.swing.JFrame {
         lblTeam1 = new javax.swing.JLabel();
         lblNombreJLRG = new javax.swing.JLabel();
         lblNombreCris = new javax.swing.JLabel();
+        lblAlejandroGuarnizo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -42,6 +43,8 @@ public class frmAbout extends javax.swing.JFrame {
 
         lblNombreCris.setText("Cristhian David Restrepo.");
 
+        lblAlejandroGuarnizo.setText("Hugo Alejandro Guarnizo Sierra");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -49,11 +52,12 @@ public class frmAbout extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblAlejandroGuarnizo)
                     .addComponent(lblNombreCris)
                     .addComponent(lblNombreJLRG)
                     .addComponent(lblTeam1)
                     .addComponent(lblTeam))
-                .addContainerGap(191, Short.MAX_VALUE))
+                .addContainerGap(176, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -66,7 +70,9 @@ public class frmAbout extends javax.swing.JFrame {
                 .addComponent(lblNombreJLRG)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lblNombreCris)
-                .addContainerGap(172, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(lblAlejandroGuarnizo)
+                .addContainerGap(140, Short.MAX_VALUE))
         );
 
         pack();
@@ -108,6 +114,7 @@ public class frmAbout extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel lblAlejandroGuarnizo;
     private javax.swing.JLabel lblNombreCris;
     private javax.swing.JLabel lblNombreJLRG;
     private javax.swing.JLabel lblTeam;
