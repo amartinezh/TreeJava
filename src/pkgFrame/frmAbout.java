@@ -32,7 +32,7 @@ public class frmAbout extends javax.swing.JFrame {
         lblNombreJLRG = new javax.swing.JLabel();
         lblNombreCris = new javax.swing.JLabel();
         lblAlejandroGuarnizo = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        Yenifer_es_bustamante = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,7 +46,7 @@ public class frmAbout extends javax.swing.JFrame {
 
         lblAlejandroGuarnizo.setText("Hugo Alejandro Guarnizo Sierra");
 
-        jLabel1.setText("Yennifer Bustamante");
+        Yenifer_es_bustamante.setText("Yennifer Bustamante");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -55,7 +55,7 @@ public class frmAbout extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
+                    .addComponent(Yenifer_es_bustamante)
                     .addComponent(lblAlejandroGuarnizo)
                     .addComponent(lblNombreCris)
                     .addComponent(lblNombreJLRG)
@@ -77,7 +77,7 @@ public class frmAbout extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lblAlejandroGuarnizo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1)
+                .addComponent(Yenifer_es_bustamante)
                 .addContainerGap(122, Short.MAX_VALUE))
         );
 
@@ -120,7 +120,7 @@ public class frmAbout extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel Yenifer_es_bustamante;
     private javax.swing.JLabel lblAlejandroGuarnizo;
     private javax.swing.JLabel lblNombreCris;
     private javax.swing.JLabel lblNombreJLRG;
