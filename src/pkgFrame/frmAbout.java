@@ -30,6 +30,7 @@ public class frmAbout extends javax.swing.JFrame {
         lblTeam = new javax.swing.JLabel();
         lblTeam1 = new javax.swing.JLabel();
         lblNombreJLRG = new javax.swing.JLabel();
+        lblNombreCris = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -39,6 +40,8 @@ public class frmAbout extends javax.swing.JFrame {
 
         lblNombreJLRG.setText("Jose Luis Restrepo Gesamá.");
 
+        lblNombreCris.setText("Cristhian David Restrepo.");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -46,6 +49,7 @@ public class frmAbout extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblNombreCris)
                     .addComponent(lblNombreJLRG)
                     .addComponent(lblTeam1)
                     .addComponent(lblTeam))
@@ -60,7 +64,9 @@ public class frmAbout extends javax.swing.JFrame {
                 .addComponent(lblTeam1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblNombreJLRG)
-                .addContainerGap(197, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblNombreCris)
+                .addContainerGap(172, Short.MAX_VALUE))
         );
 
         pack();
@@ -102,6 +108,7 @@ public class frmAbout extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel lblNombreCris;
     private javax.swing.JLabel lblNombreJLRG;
     private javax.swing.JLabel lblTeam;
     private javax.swing.JLabel lblTeam1;
