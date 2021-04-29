@@ -26,7 +26,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="Yenifer_es_bustamante" min="-2" max="-2" attributes="0"/>
+                  <Component id="YenniferBustamante" min="-2" max="-2" attributes="0"/>
                   <Component id="lblAlejandroGuarnizo" min="-2" max="-2" attributes="0"/>
                   <Component id="lblNombreCris" min="-2" max="-2" attributes="0"/>
                   <Component id="lblNombreJLRG" min="-2" max="-2" attributes="0"/>
@@ -51,7 +51,7 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="lblAlejandroGuarnizo" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="Yenifer_es_bustamante" min="-2" max="-2" attributes="0"/>
+              <Component id="YenniferBustamante" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="122" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -83,7 +83,7 @@
         <Property name="text" type="java.lang.String" value="Hugo Alejandro Guarnizo Sierra"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="Yenifer_es_bustamante">
+    <Component class="javax.swing.JLabel" name="YenniferBustamante">
       <Properties>
         <Property name="text" type="java.lang.String" value="Yennifer Bustamante"/>
       </Properties>
