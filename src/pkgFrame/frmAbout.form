@@ -26,6 +26,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <Component id="lblAlejandroGuarnizo" min="-2" max="-2" attributes="0"/>
                   <Component id="lblNombreCris" min="-2" max="-2" attributes="0"/>
                   <Component id="lblNombreJLRG" min="-2" max="-2" attributes="0"/>
@@ -47,9 +48,11 @@
               <Component id="lblNombreJLRG" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="lblNombreCris" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="lblAlejandroGuarnizo" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="140" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="122" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -78,6 +81,11 @@
     <Component class="javax.swing.JLabel" name="lblAlejandroGuarnizo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Hugo Alejandro Guarnizo Sierra"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Yennifer Bustamante"/>
       </Properties>
     </Component>
   </SubComponents>
