@@ -55,6 +55,78 @@ public class clsArbol {
             }
         }
     }
+    public clsNodo getPdrGrup1(clsNodo nodo, clsNodo nodoSerch){
+        clsNodo pdreTem = null;
+        if (nodo.getIzq() != null){
+            if(nodoSerch == nodo.getIzq())
+            {
+                pdreTem = nodo;
+                return pdreTem;
+            }
+            else
+            {
+              getPdrGrup1(nodo.getIzq(),nodoSerch);  
+            }
+            
+            
+        }
+        if (nodo.getDer() != null){ // Tiene hijo por derecha?
+            if(nodoSerch == nodo.getDer())
+            {
+                pdreTem = nodo;
+                return pdreTem;
+            }
+            else
+            {
+              getPdrGrup1(nodo.getDer(),nodoSerch);  
+            }
+        }
+        return pdreTem;
+    }
+    public String delGrup1(clsNodo rootTmp, String num){
+        if (rootTmp != null && num != "" ){
+            if(this.root.getNum() == rootTmp.getNum()){
+                return "No podemos borrar la raíz";
+            }
+            if(rootTmp.getNum() == num)
+            {
+                
+                if(rootTmp.getIzq() == null && rootTmp.getDer()== null){
+                    
+                    rootTmp = null;
+                }
+                if(rootTmp.getIzq() != null && rootTmp.getDer() == null){
+                    clsNodo pdreTem = getPdrGrup1(this.root,rootTmp);
+                    pdreTem.setIzq(rootTmp);
+                    
+                    rootTmp.setIzq(null);   
+                    rootTmp.setDer(null);
+                }
+                if(rootTmp.getIzq() == null && rootTmp.getIzq() != null){
+                    
+                    clsNodo pdreTem = getPdrGrup1(this.root,rootTmp);
+                    pdreTem.setDer(rootTmp);
+                    
+                    rootTmp.setIzq(null);   
+                    rootTmp.setDer(null);
+
+                }
+            }
+            else
+            {
+                if (rootTmp.getIzq() != null){
+                    delGrup1(rootTmp.getIzq(),num);
+                }
+                if (rootTmp.getDer() != null){ // Tiene hijo por derecha?
+                    delGrup1(rootTmp.getDer(),num);
+                }
+                
+            }   
+        }
+        return "No hay nada papi";
+    }
+    
+    
 
     /**
      * @return the root
