@@ -33,6 +33,7 @@ public class frmAbout extends javax.swing.JFrame {
         lblNombreCris = new javax.swing.JLabel();
         lblAlejandroGuarnizo = new javax.swing.JLabel();
         YenniferBustamante = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,6 +49,8 @@ public class frmAbout extends javax.swing.JFrame {
 
         YenniferBustamante.setText("Yennifer Bustamante");
 
+        jLabel1.setText("Angie Gómez :p");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -55,6 +58,7 @@ public class frmAbout extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
                     .addComponent(YenniferBustamante)
                     .addComponent(lblAlejandroGuarnizo)
                     .addComponent(lblNombreCris)
@@ -78,7 +82,9 @@ public class frmAbout extends javax.swing.JFrame {
                 .addComponent(lblAlejandroGuarnizo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(YenniferBustamante)
-                .addContainerGap(122, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel1)
+                .addContainerGap(97, Short.MAX_VALUE))
         );
 
         pack();
@@ -121,6 +127,7 @@ public class frmAbout extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel YenniferBustamante;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblAlejandroGuarnizo;
     private javax.swing.JLabel lblNombreCris;
     private javax.swing.JLabel lblNombreJLRG;

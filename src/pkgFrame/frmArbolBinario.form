@@ -34,10 +34,12 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="btnBorradoGrupo3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="lblRespuesta" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="9" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="btnInsertar" max="32767" attributes="0"/>
@@ -76,7 +78,10 @@
                   <Component id="btnBorradoGrupo5" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="btnBorradoGrupo3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnBorradoGrupo3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblRespuesta" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -119,6 +124,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Borrado Grupo 1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBorradoGrupo1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnBorradoGrupo2">
       <Properties>
@@ -150,6 +158,14 @@
           <Font name="Tahoma" size="20" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Borrado Grupo 5"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblRespuesta">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="s"/>
       </Properties>
     </Component>
   </SubComponents>
