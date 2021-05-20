@@ -11,8 +11,10 @@ package pkgClass;
  */
 public class clsNodo <T>{
     private T num;
+    private clsNodo <T> padre;
     private clsNodo <T> izq;
     private clsNodo <T> der;
+    
 
     public clsNodo() {
     }
@@ -35,6 +37,14 @@ public class clsNodo <T>{
      */
     public void setNum(T num) {
         this.num = num;
+    }
+    
+    public clsNodo getPadre() {
+        return padre;
+    }
+    
+    public void setPadre(clsNodo padre){
+        this.padre = padre;
     }
 
     /**

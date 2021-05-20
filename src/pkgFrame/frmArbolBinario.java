@@ -80,6 +80,11 @@ public class frmArbolBinario extends javax.swing.JFrame {
 
         btnBorradoGrupo5.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         btnBorradoGrupo5.setText("Borrado Grupo 5");
+        btnBorradoGrupo5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorradoGrupo5ActionPerformed(evt);
+            }
+        });
 
         lblRespuesta.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblRespuesta.setText("s");
@@ -99,8 +104,7 @@ public class frmArbolBinario extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addComponent(btnBorradoGrupo3)
                         .addGap(42, 42, 42)
-                        .addComponent(lblRespuesta)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lblRespuesta))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 9, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -153,6 +157,11 @@ public class frmArbolBinario extends javax.swing.JFrame {
     private void btnBorradoGrupo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorradoGrupo1ActionPerformed
         
     }//GEN-LAST:event_btnBorradoGrupo1ActionPerformed
+
+    private void btnBorradoGrupo5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorradoGrupo5ActionPerformed
+        // TODO add your handling code here:
+        this.arbol.buscarElim(new clsNodo(Integer.parseInt(txtNum.getText()),null ,null), this.arbol.getRoot());
+    }//GEN-LAST:event_btnBorradoGrupo5ActionPerformed
 
     /**
      * @param args the command line arguments

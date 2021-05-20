@@ -126,6 +126,33 @@ public class clsArbol {
         return "No hay nada papi";
     }
     
+    public void buscarElim(clsNodo<Integer> dato, clsNodo<Integer> rootTmp) {   
+        if (getRoot() != null) {
+            if (dato.getNum() == rootTmp.getNum()) {
+                if (rootTmp.getIzq() == null && rootTmp.getDer() == null) {
+                    rootTmp.setNum(null);
+                    System.out.println("Se eliminó");
+                    return;
+                }else{
+                    System.out.println("No se puede eliminar, tiene hijos");
+                }
+            }
+            if (dato.getNum() != rootTmp.getNum()) {
+                if (rootTmp.getIzq() != null && dato.getNum() <= rootTmp.getNum()) {
+                    buscarElim(dato, rootTmp.getIzq());
+                } else {
+                    if (rootTmp.getDer() != null && dato.getNum() > rootTmp.getNum()) {     
+                        buscarElim(dato, rootTmp.getDer());
+                    } else {
+                        System.out.println("No está en el árbol");
+                    }
+                }
+            }
+        } else {
+            System.out.println("El arbol está vacío");
+        }
+    }
+    
     
 
     /**
